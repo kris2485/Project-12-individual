@@ -1,4 +1,8 @@
-@import 'sections/variables';
-@import 'sections/mixins';
-@import 'sections/normalize';
-@import 'sections/layout';
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'layout';
+/* Components */
+
+/* Sections */
+@import 'sections/sidebar'; /* Pages / Views */
