@@ -1,0 +1,35 @@
+.chat {
+  font-family: $sidebar-font;
+  h4 {
+    margin-left: 25px;
+    text-transform: uppercase;
+    color: $menu-color;
+  }
+  .manager {
+    display: flex;
+    flex-wrap: wrap;
+    .avatar-manager {
+      background-image: url('https://i.postimg.cc/KYsF9L2p/photo-manager.jpg');
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-left: 25px;
+      position: relative;
+    }
+    .avatar-manager::after {
+      position: absolute;
+      content: '';
+      left: 85%;
+      width: 12px;
+      height: 12px;
+      transform: translateX(-50%);
+      background: #04ae00;
+      border-radius: 50%;
+    }
+    a {
+      text-decoration: none;
+      color: $link-color;
+      padding: 10px;
+    }
+  }
+}
