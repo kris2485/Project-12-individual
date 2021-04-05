@@ -2,6 +2,7 @@
   background-color: $siderbar-background;
   height: 100vh;
   width: 190px;
+  position: fixed;
 }
 .logo {
   padding-top: 10px;
@@ -48,6 +49,7 @@
         span {
           padding-left: 20px;
           font-size: 18px;
+          vertical-align: 1px;
         }
       }
     }

@@ -1,0 +1,55 @@
+.top-menu {
+  ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    li {
+      display: inline-flex;
+
+      a {
+        text-decoration: none;
+        padding-right: 20px;
+        border-left: 1px solid #e3e3e3;
+        height: 60px;
+        padding-top: 20px;
+        padding-left: 20px;
+        color: $menu-color;
+
+        .icon-topmenu {
+          height: 18px;
+          width: 18px;
+          filter: invert(50%);
+        }
+        .arrow-icon {
+          filter: invert(50%);
+          height: 15px;
+          width: 15px;
+        }
+
+        span {
+          padding-left: 10px;
+          padding-right: 10px;
+          vertical-align: 3px;
+          font-family: $brand-font;
+        }
+        .user-name {
+          color: $link-color;
+        }
+      }
+      .notification-icon {
+        position: relative;
+      }
+    }
+  }
+  .notification-icon::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    transform: translateX(-50%);
+    background: $button-color;
+    border-radius: 50%;
+    left: 55%;
+  }
+}
