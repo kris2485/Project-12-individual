@@ -1,1 +1,19 @@
-
+.central-body {
+  padding-left: 200px;
+  padding-top: 100px;
+  max-width: 95%;
+}
+.general-statistic {
+  background-color: #fff;
+  width: 100%;
+  height: 800px;
+  h2 {
+    padding-left: 50px;
+    font-family: $sidebar-font;
+    color: $menu-color;
+  }
+}
+hr {
+  border: none;
+  border-bottom: 1px solid $menu-color;
+}
