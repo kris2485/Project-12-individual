@@ -1,5 +1,5 @@
 .central-body {
-  padding-left: 200px;
+  padding-left: 275px;
   padding-top: 100px;
   max-width: 95%;
 }
@@ -7,13 +7,67 @@
   background-color: #fff;
   width: 100%;
   height: 800px;
+  box-shadow: 0 0 2px $menu-color;
   h2 {
     padding-left: 50px;
     font-family: $sidebar-font;
     color: $menu-color;
   }
+  form {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    .inputs-wrapper {
+      border: 2px solid $hr-color;
+      height: 40px;
+      input[type='date'] {
+        border: none;
+        padding-top: 5px;
+        text-align: end;
+        outline: none;
+      }
+      input[type='date']::-webkit-calendar-picker-indicator {
+        color: transparent;
+        background: none;
+        z-index: 1;
+      }
+      .first-date-picker::after {
+        position: absolute;
+        content: '';
+        left: 810px;
+        top: 236px;
+        width: 2px;
+        height: 25px;
+        transform: translateY(-50%);
+        background: $hr-color;
+      }
+      .second-date-picker::after {
+        background-image: url('../images/icons/calendar.svg');
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-size: 15px;
+        content: ' ';
+        margin-right: 10px;
+        filter: invert(50%);
+      }
+    }
+    button {
+      border: none;
+      margin-left: 15px;
+      background-color: #f58220;
+      width: 40px;
+      border-radius: 5px;
+      img {
+        width: 20px;
+        height: 20px;
+        filter: invert(1);
+        vertical-align: -2px;
+      }
+    }
+  }
 }
 hr {
   border: none;
-  border-bottom: 1px solid $menu-color;
+  border-bottom: 2px solid $hr-color;
 }
