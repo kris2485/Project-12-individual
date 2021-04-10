@@ -74,13 +74,18 @@
     border-bottom: 2px solid $hr-color;
   }
   .columns {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     .columns-flex {
-      flex: 0 50%;
-      padding-top: 18px;
-      display: inline-flex;
-      justify-content: center;
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 4px 8px;
     }
     .column-text {
       color: $menu-color;
