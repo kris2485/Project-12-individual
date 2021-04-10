@@ -1,6 +1,6 @@
 .chat {
   font-family: $sidebar-font;
-  h4 {
+  span {
     margin-left: 25px;
     text-transform: uppercase;
     color: $menu-color;
@@ -8,6 +8,7 @@
   .manager {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
     .avatar-manager {
       background-image: url('https://i.postimg.cc/KYsF9L2p/photo-manager.jpg');
       height: 40px;
