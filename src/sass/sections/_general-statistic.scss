@@ -20,8 +20,9 @@
     .inputs-wrapper {
       border: 2px solid $hr-color;
       height: 40px;
+      display: flex;
+      align-items: center;
       input[type='date'] {
-        border: none;
         padding-top: 5px;
         text-align: end;
         outline: none;
@@ -29,17 +30,15 @@
       input[type='date']::-webkit-calendar-picker-indicator {
         color: transparent;
         background: none;
-        z-index: 1;
       }
-      .first-date-picker::after {
-        position: absolute;
-        content: '';
-        left: 810px;
-        top: 236px;
-        width: 2px;
-        height: 25px;
-        transform: translateY(-50%);
-        background: $hr-color;
+      .first-date-picker {
+        border-right: 1px solid $hr-color;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+      }
+      .second-date-picker {
+        border: none;
       }
       .second-date-picker::after {
         background-image: url('../images/icons/calendar.svg');
@@ -58,6 +57,7 @@
       background-color: #f58220;
       width: 40px;
       border-radius: 5px;
+      cursor: pointer;
       img {
         width: 20px;
         height: 20px;
