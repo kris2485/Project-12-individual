@@ -1,4 +1,35 @@
 body {
   background-color: $background-color;
 }
-
+.central-body {
+  padding-left: 275px;
+  max-width: 95%;
+}
+.central-content {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 200px;
+  box-shadow: 0 0 2px $menu-color;
+}
+.title-section {
+  padding-left: 50px;
+  font-family: $main-font;
+  color: $menu-color;
+}
+hr {
+  border: none;
+  border-bottom: 2px solid $hr-color;
+}
+.big-button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  background-color: $button-color;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.big-button:hover {
+  background-color: $button-hover;
+}

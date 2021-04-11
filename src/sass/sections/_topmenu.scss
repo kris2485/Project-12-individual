@@ -3,6 +3,7 @@
   width: 100%;
   border-bottom: 1px solid #e3e3e3;
   background-color: #fff;
+  z-index: 5;
 }
 .top-menu {
   height: 100%;
@@ -78,7 +79,7 @@
     border-right: 1px solid #e3e3e3;
     border-bottom: 1px solid #e3e3e3;
     color: $siderbar-background;
-    font-family: $sidebar-font;
+    font-family: $main-font;
 
     li {
       width: 100%;

@@ -1,0 +1,33 @@
+.links {
+  padding-top: 20px;
+  .links-button {
+    display: table;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  .links-wrapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    .link-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 15px 8px;
+      a {
+        text-decoration: none;
+        color: $link-color;
+        margin: 0 auto;
+      }
+      span {
+        color: $menu-color;
+        font-family: $main-font;
+        font-weight: bold;
+      }
+    }
+  }
+}

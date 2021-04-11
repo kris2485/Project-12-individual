@@ -23,14 +23,23 @@ const chart = new Chart(ctx, {
         borderColor: '#F29E4E',
         data: [6, 72, 1, 0, 47, 11, 50, 44, 63, 76],
       },
-      {
+      /* {
         label: 'Earned',
         backgroundColor: '#71B374',
         borderColor: '#71B374',
         data: [59, 49, 68, 90, 67, 41, 13, 38, 48, 48],
         // 7
         hidden: true,
-      },
+      }, */
     ],
+  },
+  options: {
+    legend: {
+      display: true,
+      labels: {
+        boxWidth: 10,
+        usePointStyle: true,
+      },
+    },
   },
 });
