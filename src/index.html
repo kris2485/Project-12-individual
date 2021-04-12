@@ -143,14 +143,14 @@
         <div class="central-content">
           <h2 class="title-section">Links</h2>
           <hr />
-          <button class="big-button links-button">+ add new</button>
+          <button class="big-button links-button btn-open">+ add new</button>
           <div class="links-wrapper">
             <div class="link-box">
               <div class="box-span">
                 <span>Home page</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.homepage.com">http://www.homepage.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -179,10 +179,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Currently offer</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.currently.com">http://www.currently.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -211,10 +211,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Blurpix</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.blurpix.com">http://www.blurpix.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -243,10 +243,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Your Site</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.yoursite.com">http://www.yoursite.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -275,10 +275,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Google</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.google.com">http://www.google.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -307,10 +307,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Facebook</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://wwww.facebook.com">http://wwww.facebook.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -339,10 +339,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Dashboard</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.dashboard.com">http://www.dashboard.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -371,10 +371,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Blurax</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.blurax.com">http://www.blurax.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -403,10 +403,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Piece of wine</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -435,10 +435,10 @@
             </div>
             <div class="link-box">
               <div class="box-span">
-                <span>Home page</span>
+                <span>Twitter</span>
               </div>
               <div class="box-button">
-                <a href="http://homepage.com">http://homepage.com</a>
+                <a href="http://www.twitter.com">http://www.twitter.com</a>
               </div>
               <div class="box-link">
                 <a href="#">
@@ -466,10 +466,24 @@
               </div>
             </div>
           </div>
-          <button class="big-button links-button">+ add new</button>
+          <button class="big-button links-button btn-open">+ add new</button>
         </div>
       </div>
     </section>
+    <div class="overlay" id="overlay">
+      <div class="modal" id="myModal">
+        <div class="btn-close js--close-modal">x</div>
+
+        <h4>Add new link</h4>
+        <form id="add-link">
+          <label>Website name: </label>
+          <input type="text" />
+          <label>Link address: </label>
+          <input type="url" />
+          <button class="big-button">Add</button>
+        </form>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
   </body>

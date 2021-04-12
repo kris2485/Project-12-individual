@@ -43,3 +43,34 @@ const chart = new Chart(ctx, {
     },
   },
 });
+/* modals */
+const overlay = document.getElementById('overlay');
+const modals = document.getElementById('myModal');
+const btnOpen = document.querySelectorAll('.btn-open');
+
+function openModal() {
+  overlay.classList.add('show');
+  modals.classList.add('show');
+}
+btnOpen.forEach(function (modal) {
+  modal.addEventListener('click', openModal);
+});
+function closeModal() {
+  overlay.classList.remove('show');
+}
+document.querySelectorAll('#overlay .js--close-modal').forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    closeModal();
+  });
+});
+document.querySelector('#overlay').addEventListener('click', function (e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
+document.addEventListener('keydown', function (e) {
+  if (e.keyCode === 27) {
+    closeModal();
+  }
+});
