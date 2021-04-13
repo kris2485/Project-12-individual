@@ -1,3 +1,13 @@
+function toogleMenu() {
+  document.querySelector('.sidebar-menu').classList.toggle('active');
+  document.querySelector('.chat').classList.toggle('active');
+}
+document.querySelector('.fa-bars').addEventListener('click', function (event) {
+  event.preventDefault();
+  toogleMenu();
+});
+
+/* chart */
 const ctx = document.getElementById('myChart').getContext('2d');
 
 const chart = new Chart(ctx, {

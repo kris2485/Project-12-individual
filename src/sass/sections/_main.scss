@@ -34,3 +34,36 @@ hr {
 .big-button:hover {
   background-color: $button-hover;
 }
+
+@media (max-width: 767px) {
+  .sidebar {
+    position: relative;
+  }
+  .sidebar-menu {
+    display: none;
+  }
+
+  .top-menu-container {
+    display: none;
+  }
+  .top-menu-media {
+    display: block;
+  }
+  .chat {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .central-content {
+    margin-top: -80px;
+  }
+  .inputs-wrapper {
+    border: none;
+    flex-direction: column;
+    .first-date-picker,
+    .second-date-picker {
+      border: 2px solid $menu-color;
+    }
+  }
+}
