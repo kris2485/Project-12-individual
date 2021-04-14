@@ -1,0 +1,88 @@
+@media (max-width: 767px) {
+  .sidebar-menu {
+    display: none;
+  }
+  .statistic {
+    padding-top: 5px;
+  }
+  .top-menu-container {
+    display: none;
+  }
+  .chat {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .statistic {
+    .wrapper-gs {
+      form {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 200px;
+        display: block;
+        position: relative;
+        .inputs-wrapper {
+          border: none;
+          flex-direction: column;
+          height: 60%;
+          margin: 20px;
+          input[type='date'] {
+            margin: 5px;
+            width: 100%;
+            text-align: center;
+            padding-left: 70px;
+          }
+          .first-date-picker,
+          .second-date-picker {
+            border: 1px solid $hr-color;
+          }
+        }
+        button {
+          height: 40px;
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin-left: 0;
+        }
+      }
+    }
+    .columns {
+      .columns-flex {
+        width: 100%;
+        padding: 10px 15px;
+      }
+    }
+  }
+  .title-section {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .statistic .wrapper-gs form .inputs-wrapper .first-date-picker::after {
+    background-image: url(../images/icons/calendar.svg);
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-size: 15px;
+    content: ' ';
+    margin-right: 10px;
+    filter: invert(50%);
+  }
+  .links {
+    .links-wrapper {
+      padding-left: 0;
+      .link-box {
+        display: block;
+        text-align: center;
+
+        [class^='box-'] {
+          width: 100%;
+          padding-left: 0;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}

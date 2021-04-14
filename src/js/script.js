@@ -1,6 +1,7 @@
 function toogleMenu() {
   document.querySelector('.sidebar-menu').classList.toggle('active');
   document.querySelector('.chat').classList.toggle('active');
+  document.querySelector('.top-menu-media').classList.toggle('active');
 }
 document.querySelector('.fa-bars').addEventListener('click', function (event) {
   event.preventDefault();
@@ -44,6 +45,7 @@ const chart = new Chart(ctx, {
     ],
   },
   options: {
+    responsive: true,
     legend: {
       display: true,
       labels: {

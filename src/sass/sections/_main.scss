@@ -9,11 +9,12 @@ body {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   box-shadow: 0 0 2px $menu-color;
 }
 .title-section {
   padding-left: 50px;
+  padding-top: 20px;
   font-family: $main-font;
   color: $menu-color;
 }
@@ -33,37 +34,4 @@ hr {
 }
 .big-button:hover {
   background-color: $button-hover;
-}
-
-@media (max-width: 767px) {
-  .sidebar {
-    position: relative;
-  }
-  .sidebar-menu {
-    display: none;
-  }
-
-  .top-menu-container {
-    display: none;
-  }
-  .top-menu-media {
-    display: block;
-  }
-  .chat {
-    display: none;
-  }
-  .active {
-    display: block;
-  }
-  .central-content {
-    margin-top: -80px;
-  }
-  .inputs-wrapper {
-    border: none;
-    flex-direction: column;
-    .first-date-picker,
-    .second-date-picker {
-      border: 2px solid $menu-color;
-    }
-  }
 }
