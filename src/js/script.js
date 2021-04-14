@@ -1,4 +1,5 @@
 function toogleMenu() {
+  document.querySelector('.sidebar').classList.toggle('margin-left');
   document.querySelector('.sidebar-menu').classList.toggle('active');
   document.querySelector('.chat').classList.toggle('active');
   document.querySelector('.top-menu-media').classList.toggle('active');

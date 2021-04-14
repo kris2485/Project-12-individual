@@ -1,4 +1,12 @@
 @media (max-width: 767px) {
+  .sidebar {
+    margin-left: -200px;
+    .navigation {
+      .logo {
+        padding-left: 50px;
+      }
+    }
+  }
   .sidebar-menu {
     display: none;
   }
@@ -13,6 +21,12 @@
   }
   .active {
     display: block;
+  }
+  .margin-left {
+    margin-left: 0;
+  }
+  .central-body {
+    padding-left: 100px;
   }
   .statistic {
     .wrapper-gs {
@@ -29,7 +43,6 @@
           margin: 20px;
           input[type='date'] {
             margin: 5px;
-            width: 100%;
             text-align: center;
             padding-left: 70px;
           }
